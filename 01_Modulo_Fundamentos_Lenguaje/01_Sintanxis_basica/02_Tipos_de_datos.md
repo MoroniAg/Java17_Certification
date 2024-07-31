@@ -1,4 +1,4 @@
-## Tipos de Datos Primitivos en Java 17
+## Tipos de Datos Primitivos
 
 En Java, los tipos de datos primitivos son los tipos de datos más básicos que no son objetos. Son fundamentales para el lenguaje y están optimizados para el rendimiento. Java 17 incluye ocho tipos de datos primitivos, cada uno con su tamaño y rango específicos.
 
