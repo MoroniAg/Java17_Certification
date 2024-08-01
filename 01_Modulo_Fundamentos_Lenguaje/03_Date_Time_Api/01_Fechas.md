@@ -8,13 +8,13 @@ La API de Fecha y Hora en Java, introducida en Java 8 y extendida en versiones p
 
 La clase `LocalDate` representa una fecha sin información sobre la hora del día. Es útil para representar fechas en un formato más simple.
 
-**1.1.1 Creación de `LocalDate`**
+###### **1.1.1 Creación de `LocalDate`**
 
 ```java
 LocalDate fecha = LocalDate.of(2024, 7, 30); // 30 de julio de 2024
 ```
 
-**1.1.2 Métodos Comunes**
+###### **1.1.2 Métodos Comunes**
 
 - `getDayOfWeek()`: Devuelve el día de la semana.
 
@@ -44,7 +44,7 @@ La clase `LocalTime` representa una hora del día sin información sobre la fech
 LocalTime hora = LocalTime.of(14, 30); // 14:30
 ```
 
-**1.2.2 Métodos Comunes**
+###### **1.2.2 Métodos Comunes**
 
 - `plusHours(long hours)`: Añade una cantidad específica de horas a la hora.
 
@@ -62,13 +62,13 @@ LocalTime hora = LocalTime.of(14, 30); // 14:30
 
 La clase `LocalDateTime` combina `LocalDate` y `LocalTime`, representando una fecha y hora sin zona horaria.
 
-**1.3.1 Creación de `LocalDateTime`**
+###### **1.3.1 Creación de `LocalDateTime`**
 
 ```java
 LocalDateTime fechaHora = LocalDateTime.of(2024, 7, 30, 14, 30); // 30 de julio de 2024, 14:30
 ```
 
-**1.3.2 Métodos Comunes**
+###### **1.3.2 Métodos Comunes**
 
 - `getDayOfMonth()`: Devuelve el día del mes.
 
@@ -92,13 +92,13 @@ LocalDateTime fechaHora = LocalDateTime.of(2024, 7, 30, 14, 30); // 30 de julio 
 
 La clase `Instant` representa un punto en el tiempo en la línea de tiempo global, en milisegundos desde el epoch (1 de enero de 1970).
 
-**1.4.1 Creación de `Instant`**
+###### **1.4.1 Creación de `Instant`**
 
 ```java
 Instant instante = Instant.now(); // Obtiene el instante actual
 ```
 
-**1.4.2 Métodos Comunes**
+###### **1.4.2 Métodos Comunes**
 
 - `plus(Duration duration)`: Añade una duración específica al instante.
 
@@ -116,13 +116,13 @@ Instant instante = Instant.now(); // Obtiene el instante actual
 
 La clase `Duration` representa una duración en tiempo, es decir, una cantidad de tiempo entre dos instantes.
 
-**1.5.1 Creación de `Duration`**
+###### **1.5.1 Creación de `Duration`**
 
 ```java
 Duration duracion = Duration.ofHours(2); // Duración de 2 horas
 ```
 
-**1.5.2 Métodos Comunes**
+###### **1.5.2 Métodos Comunes**
 
 - `toMinutes()`: Convierte la duración a minutos.
 
@@ -140,13 +140,13 @@ Duration duracion = Duration.ofHours(2); // Duración de 2 horas
 
 La clase `Period` representa un período de tiempo en términos de años, meses y días.
 
-**1.6.1 Creación de `Period`**
+###### **1.6.1 Creación de `Period`**
 
 ```java
 Period periodo = Period.ofWeeks(2); // Período de 2 semanas
 ```
 
-**1.6.2 Métodos Comunes**
+###### **1.6.2 Métodos Comunes**
 
 - `plus(Period period)`: Añade un período específico a la fecha.
 
@@ -164,13 +164,13 @@ Period periodo = Period.ofWeeks(2); // Período de 2 semanas
 
 La clase `ZoneId` representa una zona horaria en la región del mundo.
 
-**1.7.1 Creación de `ZoneId`**
+###### **1.7.1 Creación de `ZoneId`**
 
 ```java
 ZoneId zonaHoraria = ZoneId.of("America/New_York"); // Zona horaria de Nueva York
 ```
 
-**1.7.2 Métodos Comunes**
+###### **1.7.2 Métodos Comunes**
 
 - `getRules()`: Devuelve las reglas de la zona horaria.
 
@@ -184,7 +184,7 @@ ZoneId zonaHoraria = ZoneId.of("America/New_York"); // Zona horaria de Nueva Yor
   ZoneOffset desfase = zonaHoraria.getRules().getOffset(instante);
   ```
 
-#### Ejemplos Prácticos
+#### 2. Ejemplos Prácticos
 
 **Ejemplo 1: Comparar Fechas**
 

@@ -44,36 +44,36 @@ public class Main {
 Los constructores son métodos especiales que se utilizan para inicializar objetos. Se llaman automáticamente cuando se crea una nueva instancia de una clase. Los constructores tienen el mismo nombre que la clase y no tienen un tipo de retorno.
 
 **Declaración de constructores:**
+```java
+public class Persona {
+    String nombre;
+    int edad;
 
-*public class Persona {*
-    *String nombre;*
-    *int edad;*
+    // Constructor por defecto
+    public Persona() {
+        this.nombre = "Desconocido";
+        this.edad = 0;
+    }
 
-    *// Constructor por defecto*
-    *public Persona() {*
-        *this.nombre = "Desconocido";*
-        *this.edad = 0;*
-    *}*
-
-    *// Constructor parametrizado*
-    *public Persona(String nombre, int edad) {*
-        *this.nombre = nombre;*
-        *this.edad = edad;*
-    *}*
-*}*
-
+    // Constructor parametrizado
+    public Persona(String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+}
+```
 **Creación de objetos usando constructores:**
+```java
+public class Main {
+    public static void main(String[] args) {
+        Persona persona1 = new Persona(); // Llama al constructor por defecto
+        Persona persona2 = new Persona("Juan", 25); // Llama al constructor parametrizado
 
-*public class Main {*
-    *public static void main(String[] args) {*
-        *Persona persona1 = new Persona(); // Llama al constructor por defecto*
-        *Persona persona2 = new Persona("Juan", 25); // Llama al constructor parametrizado*
-
-        *System.out.println("Persona 1: " + persona1.nombre + ", " + persona1.edad); // Imprime: Persona 1: Desconocido, 0*
-        *System.out.println("Persona 2: " + persona2.nombre + ", " + persona2.edad); // Imprime: Persona 2: Juan, 25*
-    *}*
-*}*
-
+        System.out.println("Persona 1: " + persona1.nombre + ", " + persona1.edad); // Imprime: Persona 1: Desconocido, 0
+        System.out.println("Persona 2: " + persona2.nombre + ", " + persona2.edad); // Imprime: Persona 2: Juan, 25
+    }
+}
+```
 ### Ejemplos Completos
 
 **Campos, métodos y constructores en una clase:**
