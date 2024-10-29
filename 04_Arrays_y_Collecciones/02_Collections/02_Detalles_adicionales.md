@@ -1,4 +1,4 @@
-Claro, profundicemos más en el tema de **"Crear y utilizar colecciones en Java, incluyendo cómo agregar, eliminar, actualizar, recuperar y ordenar elementos"**, con un enfoque más detallado y técnico.
+
 
 ### Java Collections Framework
 
