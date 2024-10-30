@@ -1,5 +1,3 @@
-Claro, te proporcionaré un ejemplo paso a paso, detallado y descriptivo, sobre cómo compilar un código Java, crear un archivo JAR modular y luego crear una imagen de tiempo de ejecución utilizando los comandos `javac`, `jar` y `jlink`.
-
 ### Paso 1: Estructura del Proyecto
 
 Supongamos que tienes un proyecto con la siguiente estructura:
